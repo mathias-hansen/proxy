@@ -34,7 +34,7 @@ http.createServer((req: IncomingMessage, res: ServerResponse) => {
             }
 
             http.request(options, (r => r.pipe(res)))
-                .on("error", res.end)
+                .on("error", e => res.end(e.toString()))
                 .end()
 
             return
