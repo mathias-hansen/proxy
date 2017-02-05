@@ -1,0 +1,13 @@
+{
+    "host_port": 8888,
+    "proxies": [
+        {
+            "host": ["www.mathiash.dk","mathiash.dk"],
+            "proxy": "http://localhost:8080"
+        },
+        {
+            "host": "test.mathiash.dk",
+            "proxy": "http://localhost:8081"
+        }
+    ]
+}
